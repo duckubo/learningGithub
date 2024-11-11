@@ -14,4 +14,5 @@ git checkout -b <tên_nhánh> main: Tạo nhánh mới dựa trên nhánh hiện
 git fetch: cập nhật thay đổi từ remote vào local repository nhưng không merge
 git pull: cập nhật thay đổi từ remote vào local repository và merge
 git pull origin main : cập nhật thay đổi từ 1 nhánh khác
+git restore . : quay lại trạng thái ở commit gần nhất
 
