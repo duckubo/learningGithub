@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    /* Đảm bảo iframe chiếm toàn màn hình */
+    .elementor-background-video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .elementor-background-video-embed {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      pointer-events: none; /
+    }
+
+/* Nội dung trên video */
+.content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 1;
+  padding: 20px;
+}
+
+
+</style>
+</head>
+<body>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container" style="margin-top: 800px;">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+      {
+        "symbols": [
+        {
+          "description": "AAPL",
+          "proName": "NASDAQ:AAPL"
+        },
+        {
+          "description": "GOOGL",
+          "proName": "NASDAQ:GOOGL"
+        },
+        {
+          "description": "AMZN",
+          "proName": "NASDAQ:AMZN"
+        },
+        {
+          "description": "HDFCBANK",
+          "proName": "BSE:HDFCBANK"
+        },
+        {
+          "description": "TATAMOTORS",
+          "proName": "BSE:TATAMOTORS"
+        },
+        {
+          "description": "ICICIBANK",
+          "proName": "BSE:ICICIBANK"
+        },
+        {
+          "description": "MSFT",
+          "proName": "NASDAQ:MSFT"
+        },
+        {
+          "description": "JPM",
+          "proName": "NYSE:JPM"
+        },
+        {
+          "description": "RELIANCE",
+          "proName": "BSE:RELIANCE"
+        },
+        {
+          "description": "FB",
+          "proName": "NASDAQ:FB"
+        },
+        {
+          "description": "TWTR",
+          "proName": "NYSE:TWTR"
+        },
+        {
+          "description": "",
+          "proName": "BSE:ZEEL"
+        },
+        {
+          "description": "",
+          "proName": "BSE:NTPC"
+        },
+        {
+          "description": "",
+          "proName": "BSE:COALINDIA"
+        },
+        {
+          "description": "",
+          "proName": "BSE:YESBANK"
+        },
+        {
+          "description": "",
+          "proName": "BSE:SBIN"
+        },
+        {
+          "description": "",
+          "proName": "BSE:IDEA"
+        },
+        {
+          "description": "",
+          "proName": "BSE:INDUSINDBK"
+        }
+        ],
+        "colorTheme": "dark",
+        "isTransparent": false,
+        "displayMode": "adaptive",
+        "locale": "in"
+      }
+    </script>
+  </div>
+  <!-- TradingView Widget BEGIN -->
+  <div style="display: flex">
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="width: 80%;">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-quotes.js" async>
+        {
+          
+          "height": "600",
+          "symbolsGroups": [
+          {
+            "name": "Indices",
+            "originalName": "Indices",
+            "symbols": [
+            {
+              "name": "NASDAQ:AAPL"
+            },
+            {
+              "name": "NASDAQ:GOOGL"
+            },
+            {
+              "name": "NASDAQ:AMZN"
+            },
+            {
+              "name": "BSE:HDFCBANK"
+            },
+            {
+              "name": "BSE:TATAMOTORS"
+            },
+            {
+              "name": "BSE:ICICIBANK"
+            },
+            {
+              "name": "NASDAQ:MSFT"
+            },
+            {
+              "name": "NYSE:JPM"
+            },
+            {
+              "name": "NASDAQ:FB"
+            },
+            {
+              "name": "NYSE:TWTR"
+            },
+            {
+              "name": "BSE:ZEEL"
+            },
+            {
+              "name": "BSE:NTPC"
+            },
+            {
+              "name": "BSE:COALINDIA"
+            },
+            {
+              "name": "BSE:YESBANK"
+            },
+            {
+              "name": "BSE:IDEA"
+            },
+            {
+              "name": "BSE:SBIN"
+            },
+            {
+              "name": "BSE:INDUSINDBK"
+            }
+            ]
+          }
+          ],
+          "colorTheme": "dark",
+          "isTransparent": false,
+          "locale": "in"
+        }
+      </script>
+    </div>
+    <!-- TradingView Widget END -->
+    <!-- TradingView Widget BEGIN -->
+    <div class="tradingview-widget-container" style="width:20%">
+      <div class="tradingview-widget-container__widget"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+        {
+          "colorTheme": "dark",
+          "dateRange": "12m",
+          "showChart": true,
+          "locale": "in",
+          "largeChartUrl": "",
+          "isTransparent": false,
+          "height": "600",
+          "plotLineColorGrowing": "rgba(25, 118, 210, 1)",
+          "plotLineColorFalling": "rgba(25, 118, 210, 1)",
+          "gridLineColor": "rgba(42, 46, 57, 1)",
+          "scaleFontColor": "rgba(120, 123, 134, 1)",
+          "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+          "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+          "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+          "tabs": [
+          {
+            "title": "Indices",
+            "symbols": [
+            {
+              "s": "NASDAQ:AAPL",
+              "d": "AAPL"
+            },
+            {
+              "s": "NASDAQ:GOOG"
+            },
+            {
+              "s": "NASDAQ:AMZN"
+            },
+            {
+              "s": "BSE:HDFCBANK"
+            },
+            {
+              "s": "BSE:TATAMOTORS"
+            },
+            {
+              "s": "BSE:ICICIBANK"
+            },
+            {
+              "s": "NASDAQ:MSFT"
+            },
+            {
+              "s": "NYSE:JPM"
+            },
+            {
+              "s": "NASDAQ:FB"
+            },
+            {
+              "s": "NYSE:TWTR"
+            },
+            {
+              "s": "BSE:ZEEL",
+              "d": "ZEEL"
+            },
+            {
+              "s": "BSE:NTPC"
+            },
+            {
+              "s": "BSE:COALINDIA"
+            },
+            {
+              "s": "BSE:YESBANK"
+            },
+            {
+              "s": "BSE:IDEA"
+            },
+            {
+              "s": "BSE:SBIN"
+            },
+            {
+              "s": "BSE:INDUSINDBK"
+            }
+            ],
+            "originalTitle": "Indices"
+          }
+          ]
+        }
+      </script>
+    </div>
+  </div>
+  <!-- TradingView Widget BEGIN -->
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+      {
+        "height": "600",
+        "defaultColumn": "overview",
+        "defaultScreen": "most_capitalized",
+        "market": "india",
+        "showToolbar": true,
+        "colorTheme": "dark",
+        "locale": "in"
+      }
+    </script>
+  </div>
+  <div class="elementor-background-video-container elementor-hidden-phone">
+    <iframe class="elementor-background-video-embed" frameborder="0" allowfullscreen="" allow="accelerometer; autoplay ; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="Market Loop Background Video - High Resolution" width="640" height="360"  src="https://www.youtube.com/embed/ipUuoMCEbDQ?autoplay=1&mute=1&controls=0&loop=1&playlist=ipUuoMCEbDQ"  id="widget2" style="width: 1920px; height: 1080px;"></iframe>
+  </div>
+
+
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget END -->
+  <!-- TradingView Widget END -->
+</body>
+</html>
