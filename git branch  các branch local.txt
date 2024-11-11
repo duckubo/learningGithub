@@ -1,0 +1,17 @@
+git branch : các branch local
+git branch -a : tất cả branch local/remote
+git branch -r : các branch remote
+git checkout <tên_nhánh> : switch sang nhánh khác
+git checkout -b <tên_nhánh> :Tạo và chuyển sang nhánh mới
+git branch -d <tên_nhánh> : Xóa nhánh nếu đã gộp với nhánh chính
+git branch -D <tên_nhánh> : Xóa nhánh nếu chưa gộp với nhánh chính
+git remote -v : xem các remote có trong repository 
+4. Xem tất cả các nhánh và trạng thái mới nhất bằng git branch -vv
+git branch -vv: hiển thị tất cả các nhánh cục bộ của bạn và các tham chiếu đến nhánh từ xa
+git merge <tên_nhánh> : gộp nhánh
+git push -u origin <tên_nhánh> : Đẩy nhánh mới lên remote
+git checkout -b <tên_nhánh> main: Tạo nhánh mới dựa trên nhánh hiện tại là main
+git fetch: cập nhật thay đổi từ remote vào local repository nhưng không merge
+git pull: cập nhật thay đổi từ remote vào local repository và merge
+git pull origin main : cập nhật thay đổi từ 1 nhánh khác
+
